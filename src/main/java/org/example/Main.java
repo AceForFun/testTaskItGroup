@@ -251,7 +251,7 @@ public class Main {
 
   // 1. Дан массив с целыми числами. Вывести в консоль количество положительных и отрицательных чисел в нем
   // Дан массив с целыми числами. Вывести в консоль количество положительных и отрицательных чисел в нем
-  public static void countPositivesAndNegatives(int[] arr) {
+  private static void countPositivesAndNegatives(int[] arr) {
     int positiveCount = 0;
     int negativeCount = 0;
 
@@ -269,7 +269,7 @@ public class Main {
 
   // 2. Дан массив с целыми числами. Вывести в консоль сумму элементов с четными индексами
   // Дан массив с целыми числами. Вывести в консоль сумму элементов с четными индексами
-  public static void sumElementsAtEvenIndices(int[] arr) {
+  private static void sumElementsAtEvenIndices(int[] arr) {
     int sum = 0;
 
     for (int i = 0; i < arr.length; i += 2) {
@@ -281,7 +281,7 @@ public class Main {
 
   // 3. Дан массив с целыми числами. Вывести в консоль сумму четных элементов (четные значения)
   // Дан массив с целыми числами. Вывести в консоль сумму четных элементов (четные значения)
-  public static void sumEvenElements(int[] arr) {
+  private static void sumEvenElements(int[] arr) {
     int sum = 0;
 
     for (int num : arr) {
@@ -295,7 +295,7 @@ public class Main {
 
   // 4. Дан массив с целыми числами. Вывести в консоль наибольшее из них
   // Дан массив с целыми числами. Вывести в консоль наибольшее из них
-  public static void findLargestElement(int[] arr) {
+  private static void findLargestElement(int[] arr) {
     int largest = arr[0];
 
     for (int num : arr) {
@@ -309,7 +309,7 @@ public class Main {
 
   // 5. Дан массив с целыми числами. Вывести в консоль наиболее часто встречающееся.
   // Если таких несколько, то вывести наибольшее из них, если повторяющихся нет, вывести соответствующее сообщение.
-  public static void findMostFrequentElement(int[] arr) {
+  private static void findMostFrequentElement(int[] arr) {
     final var frequencyMap = new HashMap<Integer, Integer>();
     for (int num : arr) {
       frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
@@ -334,7 +334,7 @@ public class Main {
 
   // 6. Дан двумерный массив 10х10 с целыми числами. Вывести в консоль все числа по диагонали от [0][0] до [10][10]
   // Дан двумерный массив 10х10 с целыми числами. Вывести в консоль все числа по диагонали от [0][0] до [10][10]
-  public static void printMainDiagonal(int[][] matrix) {
+  private static void printMainDiagonal(int[][] matrix) {
     for (int i = 0; i < matrix.length; i++) {
       out.println(matrix[i][i]);
     }
@@ -342,7 +342,7 @@ public class Main {
 
   // 7. Дан двумерный массив 10х10 с целыми числами. Вывести в консоль все числа по диагонали от [0][10] до [10][0]
   // Дан двумерный массив 10х10 с целыми числами. Вывести в консоль все числа по диагонали от [0][10] до [10][0]
-  public static void printAntiDiagonal(int[][] matrix) {
+  private static void printAntiDiagonal(int[][] matrix) {
     for (int i = 0; i < matrix.length; i++) {
       out.println(matrix[i][matrix.length - 1 - i]);
     }
@@ -350,7 +350,7 @@ public class Main {
 
   // 8. Дан двумерный массив 5х5 с целыми числами. Посчитать суммы чисел в каждом столбце и вывести наибольшую из них
   // Дан двумерный массив 5х5 с целыми числами. Посчитать суммы чисел в каждом столбце и вывести наибольшую из них
-  public static void sumColumnsAndFindMax(int[][] matrix) {
+  private static void sumColumnsAndFindMax(int[][] matrix) {
     int maxSum = Integer.MIN_VALUE;
 
     for (int j = 0; j < matrix[0].length; j++) {
